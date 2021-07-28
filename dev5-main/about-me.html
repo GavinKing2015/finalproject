@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gavin's Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" 
+  type="text/css" href="styles/tic.css">
+  
+
+<!-- JavaScript file included -->
+<script src="scripts/tic.js"></script>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <div class="header">
+        <h1>
+          Hello, World!
+        </h1>
+      </div>
+          <div id="links">
+            <a class="btn" href="./index.html"><strong>Home</strong></a>
+            <a class="btn" href="./tic-tac-toe.html"><strong>Game</strong></a>
+            
+            </br></br>
+          </div>
+          <img src="img/Me.jpg" alt="A photo of me">
+          <p>
+            <div id="id01"></div>
+              <script>
+              function myFunction(arr) {
+                var out = "";
+                var i;
+                for(i = 0; i<arr.length; i++) {
+                  out += '<a href="' + arr[i].url + '">' + 
+                  arr[i].display + '</a><br>';
+                }
+                document.getElementById("id01").innerHTML = out;
+              }
+              </script>
+
+              <script src="json/dev-profile.js"></script>
+            <!--<a href="json/dev-profile.json">JSON page</a>-->
+           
+          </p>
+         
+        
+    
+    </div>
+      <div id="footer">
+        <p><a class="btn" href="./index.html"><strong>Home</strong></a>
+          <a class="btn" href="./tic-tac-toe.html"><strong>Game</strong></a>
+          
+          
+          
+        </p>
+      </div>
+  </div>
+</body>
+</html>
